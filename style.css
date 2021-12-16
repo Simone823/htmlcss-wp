@@ -1,0 +1,109 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Debug */
+.debug .rosa{
+    background-color: #e579e6;
+}
+
+.debug .yellow{
+    background-color: #e1d67a;
+}
+
+.debug .blu{
+    background-color: #0087ff;
+}
+
+.debug .violet{
+    background-color: #8801fe;
+}
+
+.debug .sidebar-header{
+    background-color: lightblue;
+}
+
+.debug .side-sx, .side-dx{
+    background-color: lightblue;
+    /* border: 1px solid; */
+}
+
+.debug .side-center{
+    background-color: lightblue;
+    /* border: 1px solid; */
+}
+/* -------------------------------------------- */
+section{
+    margin-top: 30px;
+}
+
+/* Contenitore di tutto */
+.container{
+    max-width: 1600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Header Rosa */
+header{
+    max-width: 100%;
+    min-height: 140px;
+}
+
+/* Sezione gialla */
+section.yellow{
+    max-width: 1600px;
+    min-height: 508px;
+}
+
+/* Sezione azzurro scuro */
+section.blu{
+    max-width: 1600px;
+    min-height: 672px;
+}
+
+/* Sidebar */
+.sidebar-header{
+    width: 100%;
+    min-height: 86px;
+}
+
+/* Contenuto sotto sidebar */
+.content_under_sidebar{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.content_under_sidebar [class^=side] {
+    float: left;
+}
+
+/* Sidebar sinistra e destra */
+.side-sx, .side-dx{
+    width: 25%;
+    min-height: 537px;
+}
+
+/* Sidebar centrale */
+.side-center{
+    width: calc(100% - 25% - 25% - 40px);
+    min-height: 537px;
+    margin: 0 20px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer */
+footer{
+    max-width: 1600px;
+    min-height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -7,26 +7,11 @@
 }
 
 /* Debug */
-.debug .rosa{
-    background-color: violet;
-}
-
-.debug .yellow{
-}
-
-.debug .blu{
-    background-color: #0087ff;
-}
-
 .debug .violet{
     background-color: #8801fe;
 }
 
-.debug .sidebar-header{
-    background-color: lightblue;
-}
-
-.debug .side-sx, .side-dx{
+.debug .side-dx{
     background-color: lightblue;
     /* border: 1px solid; */
 }
@@ -40,16 +25,13 @@ section{
     margin-top: 30px;
 }
 
-/* Contenitore di tutto */
 .container{
     max-width: 1600px;
     margin: auto;
 }
 
-/* Header Rosa */
 header{
     max-width: 100%;
-    min-height: 140px;
 }
 
 .header-logo{
@@ -68,16 +50,17 @@ header{
     margin-right: 10px;
 }
 
-/* Sezione gialla */
 section.yellow{
-    max-width: 1600px;
-    min-height: 501px;
+    width: 1600px;
+    height: 501px;
     border-radius: 10px;
     position: relative;
-    background-image: url(img/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+section.yellow > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .description{
@@ -90,19 +73,26 @@ section.yellow{
     color: white;
 }
 
-/* Sezione azzurro scuro */
 section.blu{
     max-width: 1600px;
     min-height: 672px;
 }
 
-/* Sidebar */
 .sidebar-header{
     width: 100%;
     min-height: 86px;
 }
 
-/* Contenuto sotto sidebar */
+.sidebar-header h1{
+    font-size: 35px;
+    color: black;
+    padding-top: 12px;
+}
+
+.titolo{
+    margin-top: 10px;
+}
+
 .content_under_sidebar{
     width: 100%;
     margin: 25px 0;
@@ -112,15 +102,49 @@ section.blu{
     float: left;
 }
 
-/* Sidebar sinistra e destra */
 .side-sx, .side-dx{
-    width: 25%;
+    width: 15%;
     min-height: 537px;
 }
 
-/* Sidebar centrale */
+.side_sx_img{
+    width: 100%;
+    height: 199px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clear: both;
+}
+
+.side_sx_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side_sx_description{
+    margin-top: 20px;
+}
+
+.side_sx_description > p{
+    color: grey;
+    margin-top: 10px;
+}
+
 .side-center{
-    width: calc(100% - 25% - 25% - 40px);
+    width: calc(100% - 15% - 15% - 40px);
     min-height: 537px;
     margin: 0 20px;
 }
@@ -131,7 +155,6 @@ section.blu{
     clear: both;
 }
 
-/* Footer */
 footer{
     max-width: 1600px;
     min-height: 60px;

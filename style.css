@@ -8,11 +8,10 @@
 
 /* Debug */
 .debug .rosa{
-    background-color: #e579e6;
+    background-color: violet;
 }
 
 .debug .yellow{
-    background-color: #e1d67a;
 }
 
 .debug .blu{
@@ -72,7 +71,23 @@ header{
 /* Sezione gialla */
 section.yellow{
     max-width: 1600px;
-    min-height: 508px;
+    min-height: 501px;
+    border-radius: 10px;
+    position: relative;
+    background-image: url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.description{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+}
+
+.description h2, p{
+    color: white;
 }
 
 /* Sezione azzurro scuro */

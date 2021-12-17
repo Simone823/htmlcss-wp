@@ -29,15 +29,20 @@
     z-index: 1;
 }
 
+/* Hover */
+.menu ul li:hover a{
+    color: blue;
+}
+
 /* Debug */
 
 /* .debug .side-dx{
     background-color: lightblue;
 } */
 
-/* .debug .violet{
+/*.debug .violet{
     background-color: #8801fe;
-} */
+/* 
 
 /* -------------------------------------------- */
 
@@ -71,17 +76,25 @@ header{
 }
 
 section.yellow{
-    width: 1600px;
+    max-width: 100%;
     height: 501px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-section.yellow > img{
+/* section.yellow > img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    min-height: 400px;
+    background-position: center;
+} */
+
+.yellow{
+    background-image: url(img/banner.jpg);
+    min-height: 501px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .description-img{
@@ -129,7 +142,7 @@ section.blu{
 }
 
 .side-sx, .side-dx{
-    width: 15%;
+    max-width: 15%;
     min-height: 537px;
 }
 
@@ -162,7 +175,7 @@ section.blu{
 }
 
 .side-center{
-    width: calc(100% - 15% - 15% - 40px);
+    max-width: calc(100% - 15% - 15% - 40px);
     min-height: 537px;
     margin: 0 20px;
 }
@@ -173,13 +186,11 @@ section.blu{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    background-image: url(img/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.side_center_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 footer{
@@ -198,9 +209,4 @@ footer h3{
 footer h3 span{
     color: red;
     font-size: 30px;
-}
-
-/* Hover */
-.menu ul li:hover a{
-    color: blue;
 }

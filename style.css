@@ -199,3 +199,8 @@ footer h3 span{
     color: red;
     font-size: 30px;
 }
+
+/* Hover */
+.menu ul li:hover a{
+    color: blue;
+}

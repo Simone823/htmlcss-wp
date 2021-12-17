@@ -30,13 +30,15 @@
 }
 
 /* Debug */
+
+/* .debug .side-dx{
+    background-color: lightblue;
+} */
+
 .debug .violet{
     background-color: #8801fe;
 }
 
-.debug .side-dx{
-    background-color: lightblue;
-}
 /* -------------------------------------------- */
 
 section{
@@ -172,7 +174,7 @@ section.blu{
 .side_center_img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;  
+    object-fit: cover;
 }
 
 

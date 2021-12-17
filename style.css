@@ -26,6 +26,7 @@
     right: 0;
     bottom: 0;
     clear: both;
+    z-index: 1;
 }
 
 /* Debug */
@@ -72,6 +73,7 @@ section.yellow{
     height: 501px;
     border-radius: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 section.yellow > img{
@@ -80,14 +82,19 @@ section.yellow > img{
     object-fit: cover;
 }
 
-.description{
+.description-img{
     position: absolute;
     left: 50px;
     bottom: 50px;
+    z-index: 4;
 }
 
-.description h2, p{
+.description-img h2, p{
     color: white;
+}
+
+.description-img h2{
+    font-size: 30px;
 }
 
 section.blu{

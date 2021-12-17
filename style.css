@@ -33,17 +33,6 @@
 .menu ul li:hover a{
     color: blue;
 }
-
-/* Debug */
-
-/* .debug .side-dx{
-    background-color: lightblue;
-} */
-
-/*.debug .violet{
-    background-color: #8801fe;
-/* 
-
 /* -------------------------------------------- */
 
 section{
@@ -83,18 +72,10 @@ section.yellow{
     overflow: hidden;
 }
 
-/* section.yellow > img{
+section.yellow > img{
     width: 100%;
-    min-height: 400px;
-    background-position: center;
-} */
-
-.yellow{
-    background-image: url(img/banner.jpg);
-    min-height: 501px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    object-fit: cover;
 }
 
 .description-img{
@@ -186,9 +167,12 @@ section.blu{
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-    background-image: url(img/banner-2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+.side_center_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
